@@ -1,0 +1,9 @@
+<p-fileUpload mode="basic" accept="image/*" [customUpload]="true" (uploadHandler)="upload($event)" [auto]="true"
+  [multiple]="true"></p-fileUpload>
+
+<p-galleria [value]="images" [showItemNavigators]="true" [showThumbnails]="false"
+  [containerStyle]="{ 'max-width': '384px' }">
+  <ng-template pTemplate="item" let-item>
+    <img [src]="item" style="width: 100%; display: block;" />
+  </ng-template>
+</p-galleria>
