@@ -10,7 +10,7 @@ namespace BlobStorage.Controllers
         [HttpPost]
         public async Task<string[]> Upload()
         {
-            var connectionString = "DefaultEndpointsProtocol=https;AccountName=codeandcrisst;AccountKey=zODMoTV7HeDUldzjBhQWcDU6zNkC+uV0peg4kvbJkc7xqmlU5B4klcH3r8dLHEvVVHKK2J9qK68Z+AStpJWHIQ==;EndpointSuffix=core.windows.net";
+            var connectionString = "";
 
             var blobClient = new BlobContainerClient(connectionString, "images");
 
